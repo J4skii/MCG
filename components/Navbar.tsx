@@ -26,12 +26,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
         <div className="flex justify-between h-20 items-center">
           
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer group" onClick={() => handleNav('home')}>
-            <Logo className="h-12 w-auto" />
-            <div className="flex flex-col justify-center border-l border-gray-200 pl-3 ml-1 h-10">
-               <span className="text-lg font-bold text-slate-900 leading-none tracking-tight">Midpoint</span>
-               <span className="text-xs font-medium text-slate-500 uppercase tracking-widest">Consulting</span>
-            </div>
+          <div className="flex-shrink-0 flex items-center cursor-pointer group" onClick={() => handleNav('home')}>
+            <Logo className="h-16 w-auto" />
           </div>
 
           {/* Desktop Menu */}

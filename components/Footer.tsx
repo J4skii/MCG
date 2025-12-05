@@ -13,9 +13,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           
           <div className="col-span-1 md:col-span-2">
-             <div className="flex items-center gap-3 mb-4">
-                <Logo className="h-10 w-auto" />
-                <span className="font-bold text-slate-900 text-xl border-l border-gray-200 pl-3">Midpoint Consulting Group</span>
+             <div className="flex items-center gap-3 mb-6">
+                <Logo className="h-14 w-auto" />
              </div>
              <p className="text-gray-500 mb-6 max-w-sm leading-relaxed text-sm">
                 Part of the Praeto Group Empowered Ecosystem. 

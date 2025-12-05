@@ -45,7 +45,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
   return (
-    <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 overflow-hidden bg-white">
+    <section className="relative pt-12 pb-8 lg:pt-16 lg:pb-10 overflow-hidden bg-white">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-50 -skew-x-12 transform origin-top-right -z-10 translate-x-20"></div>
 
@@ -56,12 +56,12 @@ const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
             Youth-Led, Empowerment-Driven
           </div>
           
-          <h1 className="text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6">
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
             Connecting <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-500">Capital</span> <br/>
             With <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-500">Opportunity</span>
           </h1>
           
-          <p className="text-lg text-gray-600 mb-8 max-w-xl leading-relaxed">
+          <p className="text-lg text-gray-600 mb-4 max-w-xl leading-relaxed">
             Midpoint Consulting Group connects businesses to banks, DFIs, and private equity. 
             We structure deals that are credible, compliant, and investor-ready.
           </p>
@@ -83,7 +83,7 @@ const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
             </button>
           </div>
 
-          <div className="mt-8 flex items-center gap-6 text-sm text-gray-500">
+          <div className="mt-4 flex items-center gap-6 text-sm text-gray-500">
              <div className="flex items-center gap-2">
                 <CheckCircle2 size={16} className="text-green-500" />
                 <span>R300m+ Packaged</span>
