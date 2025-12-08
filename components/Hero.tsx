@@ -41,27 +41,28 @@ export const AnimatedCounter: React.FC<{ value: number; duration?: number }> = (
 
 interface HeroProps {
   onStartClick: () => void;
+  onProcessClick: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
+const Hero: React.FC<HeroProps> = ({ onStartClick, onProcessClick }) => {
   return (
-    <section className="relative pt-12 pb-8 lg:pt-16 lg:pb-10 overflow-hidden bg-white">
+    <section className="relative pt-12 pb-8 lg:pt-16 lg:pb-10 overflow-hidden bg-slate-950">
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-50 -skew-x-12 transform origin-top-right -z-10 translate-x-20"></div>
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-900/40 -skew-x-12 transform origin-top-right -z-10 translate-x-20"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="lg:w-3/5">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider mb-6 border border-blue-100">
-            <span className="w-2 h-2 rounded-full bg-blue-600"></span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-200 text-xs font-bold uppercase tracking-wider mb-6 border border-blue-500/20">
+            <span className="w-2 h-2 rounded-full bg-blue-400"></span>
             Youth-Led, Empowerment-Driven
           </div>
           
-          <h1 className="text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15] mb-4">
             Connecting <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-500">Capital</span> <br/>
             With <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-500">Opportunity</span>
           </h1>
           
-          <p className="text-lg text-gray-600 mb-4 max-w-xl leading-relaxed">
+          <p className="text-lg text-slate-300 mb-4 max-w-xl leading-relaxed">
             Midpoint Consulting Group connects businesses to banks, DFIs, and private equity. 
             We structure deals that are credible, compliant, and investor-ready.
           </p>
@@ -74,22 +75,20 @@ const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
               Start Registration <ArrowRight size={18} />
             </button>
             <button 
-              onClick={() => {
-                document.getElementById('process')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="px-8 py-3.5 bg-white border border-gray-300 text-slate-700 font-semibold rounded-lg hover:border-blue-500 hover:text-blue-600 transition-all"
+              onClick={onProcessClick}
+              className="px-8 py-3.5 bg-slate-900 border border-slate-700 text-slate-200 font-semibold rounded-lg hover:border-blue-500 hover:text-blue-300 transition-all"
             >
               How It Works
             </button>
           </div>
 
-          <div className="mt-4 flex items-center gap-6 text-sm text-gray-500">
+             <div className="mt-4 flex items-center gap-6 text-sm text-slate-400">
              <div className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-green-500" />
+                 <CheckCircle2 size={16} className="text-green-400" />
                 <span>R300m+ Packaged</span>
              </div>
              <div className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-green-500" />
+                 <CheckCircle2 size={16} className="text-green-400" />
                 <span>20+ Active Mandates</span>
              </div>
           </div>

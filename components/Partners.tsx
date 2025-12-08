@@ -4,11 +4,11 @@ import { ExternalLink } from 'lucide-react';
 
 const Partners: React.FC = () => {
   return (
-    <section id="partners" className="py-20 bg-white border-b border-gray-100">
+    <section id="partners" className="py-20 bg-slate-950 border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-slate-900">Our Capital Partners</h3>
-            <p className="text-gray-500 mt-2">Placement of deals at leading institutions</p>
+          <h3 className="text-2xl font-bold text-slate-100">Our Capital Partners</h3>
+          <p className="text-slate-400 mt-2">Placement of deals at leading institutions</p>
         </div>
         
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
@@ -47,9 +47,9 @@ const PartnerLink: React.FC<{ partner: typeof PARTNERS[0] }> = ({ partner }) => 
     >
       {imageError ? (
         // Fallback to a styled link button instead of just text
-        <div className="flex items-center gap-2 px-5 py-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-blue-400 hover:text-blue-600 transition-colors shadow-sm group-hover:shadow-md">
-          <span className="font-semibold text-gray-700 group-hover:text-blue-700 text-sm">{partner.name}</span>
-          <ExternalLink size={14} className="text-gray-400 group-hover:text-blue-500" />
+        <div className="flex items-center gap-2 px-5 py-3 bg-slate-900 border border-slate-700 rounded-lg hover:border-blue-400 hover:text-blue-300 transition-colors shadow-sm group-hover:shadow-md">
+          <span className="font-semibold text-slate-200 group-hover:text-blue-300 text-sm">{partner.name}</span>
+          <ExternalLink size={14} className="text-slate-500 group-hover:text-blue-300" />
         </div>
       ) : (
         <img 

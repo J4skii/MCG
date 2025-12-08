@@ -11,7 +11,7 @@ const Logo: React.FC<LogoProps> = ({ className = "h-10 w-auto" }) => {
 
   return (
     <img 
-      src="https://www.bizforsale.co.za/finance/images/Finance_MCG.jpg" 
+      src="/mcgDark.png" 
       alt="Midpoint Consulting Group" 
       className={`${className} object-contain cursor-pointer`}
       onClick={scrollToTop}

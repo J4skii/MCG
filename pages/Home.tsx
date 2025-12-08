@@ -14,7 +14,10 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ onNavigate }) => {
   return (
     <>
-      <Hero onStartClick={() => onNavigate('register')} />
+      <Hero 
+        onStartClick={() => onNavigate('register')} 
+        onProcessClick={() => onNavigate('process')} 
+      />
       <StatsGrid />
       <Services />
       <TrackRecord />

@@ -15,7 +15,7 @@ const StepCard: React.FC<StepCardProps> = ({ step, isLast, type }) => {
     <div className="relative flex-1 min-w-[200px]">
       {/* Connector Line */}
       {!isLast && (
-        <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-200 -z-10"></div>
+        <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-slate-700 -z-10"></div>
       )}
       
       <div className="flex flex-col items-center text-center p-4">
@@ -23,10 +23,10 @@ const StepCard: React.FC<StepCardProps> = ({ step, isLast, type }) => {
           <step.Icon size={28} />
         </div>
         
-        <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm w-full min-h-[140px] hover:shadow-md transition-shadow">
+        <div className="bg-slate-900 p-4 rounded-lg border border-slate-800 shadow-sm w-full min-h-[140px] hover:shadow-md transition-shadow">
           <span className={`text-xs font-bold ${textColor} uppercase mb-1 block`}>Step {step.id}</span>
-          <h4 className="font-bold text-slate-900 mb-2">{step.title}</h4>
-          <p className="text-xs text-gray-500 leading-relaxed">{step.description}</p>
+          <h4 className="font-bold text-slate-100 mb-2">{step.title}</h4>
+          <p className="text-xs text-slate-400 leading-relaxed">{step.description}</p>
         </div>
       </div>
     </div>

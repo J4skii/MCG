@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
   };
 
   return (
-    <nav className="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <nav className="fixed w-full z-50 bg-slate-950/95 backdrop-blur-sm border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           
@@ -38,20 +38,20 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                 onClick={() => handleNav(item.path)}
                 className={`text-sm font-medium transition-colors duration-200 ${
                   currentPage === item.path
-                    ? 'text-blue-600 font-semibold' 
-                    : 'text-gray-600 hover:text-blue-600'
+                    ? 'text-blue-400 font-semibold'
+                    : 'text-slate-300 hover:text-slate-100'
                 }`}
               >
                 {item.label}
               </button>
             ))}
 
-            <div className="h-6 w-[1px] bg-gray-200 mx-2"></div>
+            <div className="h-6 w-[1px] bg-slate-700 mx-2"></div>
 
             <button
                onClick={() => handleNav('dashboard')}
                className={`flex items-center gap-2 text-sm font-medium transition-colors ${
-                 currentPage === 'dashboard' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
+                 currentPage === 'dashboard' ? 'text-blue-400' : 'text-slate-300 hover:text-slate-100'
                }`}
             >
               <LayoutDashboard size={18} />
@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
             <button
               onClick={() => handleNav('register')}
-              className="bg-slate-900 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-slate-800 transition-all flex items-center gap-2 shadow-lg shadow-slate-900/10"
+              className="bg-blue-500/90 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-blue-500 transition-all flex items-center gap-2 shadow-lg shadow-blue-500/20"
             >
               Register <ArrowRight size={16} />
             </button>
@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 hover:text-blue-600 focus:outline-none p-2"
+              className="text-slate-300 hover:text-slate-100 focus:outline-none p-2"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -80,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+        <div className="md:hidden bg-slate-900 border-t border-slate-800 absolute w-full shadow-xl">
           <div className="px-4 pt-4 pb-6 space-y-2">
             {navLinks.map((item) => (
               <button
@@ -88,8 +88,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                 onClick={() => handleNav(item.path)}
                 className={`block w-full text-left px-4 py-3 rounded-lg text-base font-medium ${
                   currentPage === item.path 
-                  ? 'text-blue-600 bg-blue-50' 
-                  : 'text-gray-700 hover:bg-gray-50'
+                  ? 'text-blue-400 bg-slate-800' 
+                  : 'text-slate-300 hover:bg-slate-800'
                 }`}
               >
                 {item.label}
@@ -97,14 +97,14 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             ))}
             <button
               onClick={() => handleNav('dashboard')}
-              className="block w-full text-left px-4 py-3 rounded-lg text-base font-medium text-gray-700 hover:bg-gray-50"
+              className="block w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800"
             >
               Dashboard
             </button>
-            <div className="pt-4 mt-2 border-t border-gray-100">
+            <div className="pt-4 mt-2 border-t border-slate-800">
                 <button
                 onClick={() => handleNav('register')}
-                className="block w-full text-center px-4 py-3 rounded-lg text-base font-bold text-white bg-blue-600 hover:bg-blue-700"
+              className="block w-full text-center px-4 py-3 rounded-lg text-base font-bold text-white bg-blue-500 hover:bg-blue-600"
                 >
                 Start Registration
                 </button>

@@ -8,7 +8,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
-    <footer className="bg-white border-t border-gray-200 pt-16 pb-8">
+    <footer className="bg-slate-950 border-t border-slate-800 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           
@@ -16,46 +16,46 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
              <div className="flex items-center gap-3 mb-6">
                 <Logo className="h-14 w-auto" />
              </div>
-             <p className="text-gray-500 mb-6 max-w-sm leading-relaxed text-sm">
+             <p className="text-slate-400 mb-6 max-w-sm leading-relaxed text-sm">
                 Part of the Praeto Group Empowered Ecosystem. 
                 We deliver credible, compliant, and scalable solutions across funding, advisory, and deal execution.
              </p>
           </div>
 
           <div>
-            <h4 className="font-bold text-slate-900 mb-6">Company</h4>
-            <ul className="space-y-3 text-sm text-gray-600">
-              <li><button onClick={() => onNavigate('home')} className="hover:text-blue-600">About Us</button></li>
-              <li><button onClick={() => onNavigate('process')} className="hover:text-blue-600">Our Process</button></li>
-              <li><button onClick={() => onNavigate('home')} className="hover:text-blue-600">Success Stories</button></li>
-              <li><button onClick={() => onNavigate('register')} className="hover:text-blue-600 font-medium text-blue-600">Register</button></li>
+            <h4 className="font-bold text-slate-100 mb-6">Company</h4>
+            <ul className="space-y-3 text-sm text-slate-400">
+              <li><button onClick={() => onNavigate('home')} className="hover:text-blue-300">About Us</button></li>
+              <li><button onClick={() => onNavigate('process')} className="hover:text-blue-300">Our Process</button></li>
+              <li><button onClick={() => onNavigate('home')} className="hover:text-blue-300">Success Stories</button></li>
+              <li><button onClick={() => onNavigate('register')} className="hover:text-blue-300 font-medium text-blue-300">Register</button></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-bold text-slate-900 mb-6">Contact</h4>
-            <ul className="space-y-4 text-sm text-gray-600">
+            <h4 className="font-bold text-slate-100 mb-6">Contact</h4>
+            <ul className="space-y-4 text-sm text-slate-400">
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-blue-600 mt-0.5 shrink-0" />
+                <MapPin size={18} className="text-blue-400 mt-0.5 shrink-0" />
                 <span>Johannesburg & KZN,<br/>South Africa</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={18} className="text-blue-600 shrink-0" />
-                <a href="mailto:info@midpointgroup.co.za" className="hover:text-blue-600">info@midpointgroup.co.za</a>
+                <Mail size={18} className="text-blue-400 shrink-0" />
+                <a href="mailto:info@midpointgroup.co.za" className="hover:text-blue-300">info@midpointgroup.co.za</a>
               </li>
                <li className="flex items-center gap-3">
-                <Phone size={18} className="text-blue-600 shrink-0" />
+                <Phone size={18} className="text-blue-400 shrink-0" />
                 <span>+27 (0) 10 123 4567</span>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
           <p>&copy; {new Date().getFullYear()} Midpoint Consulting Group. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <button className="hover:text-gray-600">Privacy Policy</button>
-            <button className="hover:text-gray-600">Terms of Service</button>
+            <button className="hover:text-slate-300">Privacy Policy</button>
+            <button className="hover:text-slate-300">Terms of Service</button>
           </div>
         </div>
       </div>
